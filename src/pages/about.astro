@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 ---
@@ -14,11 +15,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 	</head>
 	<body>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/portfolio/">The Work</a>
-            <a href="/about/">About Me</a>
-        </nav>
+        <!-- Dynamically Inject -->
+		<Navigation />
 
 		<h1>About Me</h1>
         <p>This is me.</p>
